@@ -1,0 +1,28 @@
+﻿生成启动时间为 2017/9/20 星期三 17:11:22。
+     1>项目“D:\E盘\GPS_INS组合导航1.1(serial)\组合导航\组合导航.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Sins.cpp
+         Sins.cpp
+     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(28): warning C4101: “f_clRNh”: 未引用的局部变量
+     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(29): warning C4101: “wien”: 未引用的局部变量
+     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(59): warning C4101: “x”: 未引用的局部变量
+     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(136): warning C4101: “n”: 未引用的局部变量
+     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(350): warning C4101: “pos0”: 未引用的局部变量
+     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(392): warning C4101: “atti”: 未引用的局部变量
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib" /LIBPATH:"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.lib" /MACHINE:X86 Debug\datastream.obj
+         Debug\imuprocess.obj
+         Debug\loosely_coupled_INS_GNSS.obj
+         Debug\main.obj
+         Debug\matrix.obj
+         Debug\nmea.obj
+         Debug\queue.obj
+         Debug\rawdecode.obj
+         Debug\Sins.obj
+         Debug\util.obj
+         组合导航.vcxproj -> D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.exe
+     1>已完成生成项目“D:\E盘\GPS_INS组合导航1.1(serial)\组合导航\组合导航.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.33
