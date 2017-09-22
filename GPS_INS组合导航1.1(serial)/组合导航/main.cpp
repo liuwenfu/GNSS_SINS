@@ -309,7 +309,7 @@ void main()
 
 					kf_updatemode = "T";
 
-			/*		fprintf(sinsoutput, "timeflag:%d\t", IMU_data.Timeflag);
+					fprintf(sinsoutput, "timeflag:%d\t", IMU_data.Timeflag);
 					if (get_gps_pos == true)
 					{
 						kf_updatemode = "B";
@@ -326,47 +326,9 @@ void main()
 
 					fprintf(sinsoutput, "%.6f,%.6f,%.6f,\t", sinsfilter_opt->atti.x * 180 / PI, sinsfilter_opt->atti.y * 180 / PI, sinsfilter_opt->atti.z * 180 / PI);
 					fprintf(sinsoutput, "%.3f,%.3f,%.3f,\t", sinsfilter_opt->vel.x, sinsfilter_opt->vel.y, sinsfilter_opt->vel.z);
-					fprintf(sinsoutput, "%.6f,%.6f,%.6f\n", sinsfilter_opt->pos.x * 180 / PI, sinsfilter_opt->pos.y * 180 / PI, sinsfilter_opt->pos.z);*/
-				}				
-			//	n1 = 0;
-	//			
-			}
-		
-
-			
-
-		/*		for (int32u i = 0; i < 2502; i++)
-					{
-					if (  iPhasePC == GPSdata[i].time ) // && GPSdata[i].pos.x != 0 && GPSdata[i].pos.y != 0 || GPSdata[i].pos.z != 0)
-					{
-					kf_updatemode = "B";
-					fprintf(sinsoutput, "time:%ld,\t", iPhasePC);
-
-					loosely_coupled_GNSS_INS(earthp, sinst, GPSdata[i], nts, kf, sinsfilter_opt, kf_updatemode,&iTer_allan,&beta);
-
-					//			fprintf(sinsoutput, "量测更新:\t");
-					fprintf(sinsoutput, "%.6f,%.6f,%.6f,\t", sinsfilter_opt->atti.x * 180 / PI, sinsfilter_opt->atti.y * 180 / PI, sinsfilter_opt->atti.z * 180 / PI);
-					fprintf(sinsoutput, "%.3f,%.3f,%.3f,\t", sinsfilter_opt->vel.x, sinsfilter_opt->vel.y, sinsfilter_opt->vel.z);
 					fprintf(sinsoutput, "%.6f,%.6f,%.6f\n", sinsfilter_opt->pos.x * 180 / PI, sinsfilter_opt->pos.y * 180 / PI, sinsfilter_opt->pos.z);
-
-					break;
-					}
-					}
-
-					if (kf_updatemode == "T")
-
-					{
-					//			fprintf(sinsoutput, "时间更新:\t");
-					loosely_coupled_GNSS_INS(earthp, sinst, GPSdata[0], nts, kf, sinsfilter_opt, kf_updatemode,&iTer_allan,&beta);
-					}
-
-					//			fprintf(sinsoutput, "%.6f,%.6f,%.6f,\t", sinsfilter_opt->atti.x * 180 / PI, sinsfilter_opt->atti.y * 180 / PI, sinsfilter_opt->atti.z * 180 / PI);
-					//			fprintf(sinsoutput, "%.3f,%.3f,%.3f,\t", sinsfilter_opt->vel.x, sinsfilter_opt->vel.y, sinsfilter_opt->vel.z);
-					//			fprintf(sinsoutput, "%.3f,%.3f,%.3f\n", sinsfilter_opt->pos.x * 180 / PI, sinsfilter_opt->pos.y * 180 / PI, sinsfilter_opt->pos.z);
-					//			fprintf(sinsoutput, "\n\n");
-
-					}*/
-
+				}				
+			}
 		}
 
 		fclose(result); fclose(sinsoutput);

@@ -25,7 +25,7 @@ extern void crc16_update(int *currectCrc, const int *src, int lengthInBytes)
 	}
 	*currectCrc = crc;
 }
-
+//IMU数据打包
 extern int input_IMU(unsigned int data, Packet_t *RxPkt)
 {
 	switch (RxPkt->status)
@@ -80,7 +80,7 @@ extern int input_IMU(unsigned int data, Packet_t *RxPkt)
 	}
 	return 0;
 }
-
+//IMU数据解析
 extern void decode_IMU(Packet_t *RxPkt, IMUdata_Raw *imudata_raw)
 {
 	if (RxPkt->buf[2] == 0xA0)

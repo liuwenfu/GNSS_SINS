@@ -123,7 +123,7 @@ void qmul(quat qi1, quat qi2, quat *qo)
 /*------------------------------------------------------------------
       姿态欧拉角、旋转矢量、方向余弦矩阵（Cnb）、四元数相互转换
 ------------------------------------------------------------------*/
-//等效旋转矢量转化成四元数  已核
+//等效旋转矢量转化成四元数  /
 void rv2q(Vect rv, quat *qo)
 {
 	float64 value = 0, value2 = 0;
@@ -154,7 +154,7 @@ void rv2q(Vect rv, quat *qo)
 	n2 = q.q0*q.q0 + q.q1*q.q1 + q.q2*q.q2 + q.q3*q.q3;
 	if (n2>1.000001 || n2<0.999999) qnormlz(q, qo);
 }
-//等效旋转矢量转换成方向余弦阵 已核  
+//等效旋转矢量转换成方向余弦阵 /  
 void rv2cnb(Vect rv, float64 *Cnb)
 {
 	float64 xx = 0, yy = 0, zz = 0;
@@ -315,7 +315,7 @@ void att2q(Vect atti,quat *qnb)
 	q0 /= nq; q1 /= nq; q2 /= nq; q3 /= nq;
 }*/
 
-//四元数转换成姿态欧拉角  已核
+//四元数转换成姿态欧拉角  /
 void q2att(quat qnb,Vect *atti)
 {
 	float64 q00, q01, q02, q03,q11,q12,q13,q22,q23,q33;
@@ -367,7 +367,7 @@ void q2att(quat qnb,Vect *atti)
 	
 	atti->x = pitch; atti->y = roll;atti->z = yaw;
 }
-//四元数转换成方向余弦阵 已核
+//四元数转换成方向余弦阵 /
 void q2cnb(quat qnb,float64 *Cnb)
 {
 	float64 q00, q01, q02, q03, q11, q12, q13, q22, q23, q33;
@@ -403,7 +403,7 @@ void cnb2q(float64 *Cnb,quat *qnb)
     if(n2>1.000001 ||n2<0.999999)	qnormlz(q, qnb);
 	else *qnb = q;
 }
-//参考严恭敏 PINS
+//参考严恭敏 PINS  精度高
 void cnb2q1(float64 *Cnb, quat *qnb)
 {
 	float64 qq4,n2;

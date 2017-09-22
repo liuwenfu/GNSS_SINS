@@ -5,6 +5,8 @@
 #include <ctype.h>
 #include "nmea.h"
 
+/*NMEA 0183Êý¾Ý½âÎö
+*/
 nmeaPROPERTY * nmea_property()
 {
 	static nmeaPROPERTY prop = {

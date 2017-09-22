@@ -4,6 +4,7 @@
 #include <string.h>
 #include <stdio.h>
 
+//单位阵
 void Matrix_I(int8u n,float64 *Imat)
 {
 	for (int8u i = 0; i < n; i++)
@@ -46,7 +47,7 @@ void Matrix_diag2(float64 *dig, int8u n, float64 *diag)
 		}
 	}
 }
-
+//矩阵相加
 int16u MatrixAdd(const float64 *clA,int16u row,int16u col, const float64 *clB, float64 *pclResult)
 {
 	int16u i = 0;                         //循环控制变量
@@ -64,7 +65,7 @@ int16u MatrixAdd(const float64 *clA,int16u row,int16u col, const float64 *clB, f
 	return 0;
 
 }
-
+//矩阵相减
 int16u MatrixSub(const float64 *clA, int16u row,int16u col,const float64 *clB, float64 *pclResult)
 {
 	int16u i = 0;                         //循环控制变量
@@ -103,7 +104,7 @@ extern int MatrixTrans(const double *clA, int row, int colomn, double *pclDes)
 	//执行成功则返回0
 	return 0;
 }
-
+//数乘矩阵
 int16u NumMultiMatrix(const float64 dwNum, float64 *clMatrix, int16u row,int16u col,float64 *pclMatrix)
 {
 	int16u i = 0;                       //循环变量

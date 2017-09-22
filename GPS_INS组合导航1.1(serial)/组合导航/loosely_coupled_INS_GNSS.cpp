@@ -13,29 +13,6 @@ bool kalmanfilter_init_flag = false;
 |output:
 */
 
-/*Matrix pFkk1_buff; 
-Matrix pQk_buff;
-Matrix pHk1_buff;
-Matrix pRk1_buff;
-Matrix pPk_buff;
-Matrix pPkk1_buff;
-Matrix pK1_buff;
-Matrix pXk_buff;
-Matrix pZk1_buff;
-Matrix pGk_buff;
-
-float64 pFkk1[DIMSTATE*DIMSTATE] = {0};
-float64 pQk[DIMSTATE*DIMSTATE] = {0};
-float64 pHk1[DIMMEA*DIMSTATE] = {0};
-float64 pRk1[DIMMEA*DIMMEA] = {0};
-float64 pPk[DIMSTATE*DIMSTATE] = {0};
-float64 pPkk1[DIMSTATE*DIMSTATE] = {0};
-float64 pK1[DIMSTATE*DIMMEA] = {0};
-float64 pXk[DIMSTATE * 1] = {0};
-float64 pZk1[DIMMEA * 1] = {0};
-float64 pGk[DIMSTATE*DIMSTATE] = { 0 };*/
-
-
 /*滤波器初始化 
   系统状态方程：dX=F*X+G*w              //X为状态向量：3个失准角误差参数，3个速度误差参数，3个位置误差参数，3个陀螺常值飘移参数，3个加速度计零偏参数
   量测方程：Z=H*X+v                     //量测观测值：GPS解算位置与SINS位置之差，GPS解算速度与SINS速度之差

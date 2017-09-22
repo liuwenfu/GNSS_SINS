@@ -19,7 +19,8 @@ static double conefactors[5][4] = { {0},			// coning coefficients
 输出： phim        经过圆锥误差补偿的等效旋转矢量
        dvbm        经过划桨误差补偿的速度增量
 */
-/*void IMUupdate(const pVect wm, const pVect vm, int nSamples)
+//多项式等效旋转矢量误差补偿
+/*void IMUupdate1(const pVect wm, const pVect vm, int nSamples)
 {
 	int32s i;
 	int8u prefirst = 1;
@@ -53,7 +54,7 @@ static double conefactors[5][4] = { {0},			// coning coefficients
 	dvbm.x = vmm.x + 1.0 / 2 * wmm.x + vmm.x + (cm.x*vm[i].x + sm.x*wm[i].x);
 	dvbm.y = vmm.y + 1.0 / 2 * wmm.y + vmm.y + (cm.y*vm[i].y + sm.y*wm[i].y);
 	dvbm.z = vmm.z + 1.0 / 2 * wmm.z + vmm.z + (cm.z*vm[i].z + sm.z*wm[i].z);
-}*/
+}
 
 /*求经过圆锥误差补偿后等效旋转矢量函数
     及经过旋转误差补偿、划桨误差补偿后的速度增量

@@ -1,16 +1,46 @@
-﻿生成启动时间为 2017/9/20 星期三 17:11:22。
-     1>项目“D:\E盘\GPS_INS组合导航1.1(serial)\组合导航\组合导航.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2017/9/22 星期五 23:26:38。
+     1>项目“D:\GNSS_SINS\GPS_INS组合导航1.1(serial)\组合导航\组合导航.vcxproj”在节点 2 上(Rebuild 个目标)。
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Sins.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _CRT_SECURE_NO_WARNINGS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt datastream.cpp imuprocess.cpp loosely_coupled_INS_GNSS.cpp main.cpp matrix.cpp nmea.cpp queue.cpp rawdecode.cpp Sins.cpp util.cpp
+         util.cpp
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\util.cpp(99): warning C4244: “=”: 从“float64”转换到“float”，可能丢失数据
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\util.cpp(409): warning C4101: “n2”: 未引用的局部变量
          Sins.cpp
-     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(28): warning C4101: “f_clRNh”: 未引用的局部变量
-     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(29): warning C4101: “wien”: 未引用的局部变量
-     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(59): warning C4101: “x”: 未引用的局部变量
-     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(136): warning C4101: “n”: 未引用的局部变量
-     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(350): warning C4101: “pos0”: 未引用的局部变量
-     1>d:\e盘\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(392): warning C4101: “atti”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(28): warning C4101: “f_clRNh”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(29): warning C4101: “wien”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(59): warning C4101: “x”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(136): warning C4101: “n”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(350): warning C4101: “pos0”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\sins.cpp(392): warning C4101: “atti”: 未引用的局部变量
+         rawdecode.cpp
+         queue.cpp
+         nmea.cpp
+         matrix.cpp
+         main.cpp
+     1>c:\program files (x86)\microsoft sdks\windows\v7.1a\include\sal_supp.h(57): warning C4005: “__useHeader”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2886) : 参见“__useHeader”的前一个定义
+     1>c:\program files (x86)\microsoft sdks\windows\v7.1a\include\specstrings_supp.h(77): warning C4005: “__on_failure”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2896) : 参见“__on_failure”的前一个定义
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\const.h(18): warning C4005: “min”: 宏重定义
+                 c:\program files (x86)\microsoft sdks\windows\v7.1a\include\windef.h(194) : 参见“min”的前一个定义
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(181): warning C4244: “=”: 从“float64”转换到“int”，可能丢失数据
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(216): warning C4101: “x”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(216): warning C4101: “lat”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(216): warning C4101: “n_vm0”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(217): warning C4101: “Vm0”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(216): warning C4101: “n_wm0”: 未引用的局部变量
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\main.cpp(217): warning C4101: “Wm0”: 未引用的局部变量
+         loosely_coupled_INS_GNSS.cpp
+         imuprocess.cpp
+         datastream.cpp
+     1>c:\program files (x86)\microsoft sdks\windows\v7.1a\include\sal_supp.h(57): warning C4005: “__useHeader”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2886) : 参见“__useHeader”的前一个定义
+     1>c:\program files (x86)\microsoft sdks\windows\v7.1a\include\specstrings_supp.h(77): warning C4005: “__on_failure”: 宏重定义
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\sal.h(2896) : 参见“__on_failure”的前一个定义
+     1>d:\gnss_sins\gps_ins组合导航1.1(serial)\组合导航\datastream.cpp(166): warning C4101: “error”: 未引用的局部变量
+         正在生成代码...
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib" /LIBPATH:"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.lib" /MACHINE:X86 Debug\datastream.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\GNSS_SINS\GPS_INS组合导航1.1(serial)\Debug\组合导航.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\lib" /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\lib" /LIBPATH:"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\GNSS_SINS\GPS_INS组合导航1.1(serial)\Debug\组合导航.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\GNSS_SINS\GPS_INS组合导航1.1(serial)\Debug\组合导航.lib" /MACHINE:X86 Debug\datastream.obj
          Debug\imuprocess.obj
          Debug\loosely_coupled_INS_GNSS.obj
          Debug\main.obj
@@ -20,9 +50,9 @@
          Debug\rawdecode.obj
          Debug\Sins.obj
          Debug\util.obj
-         组合导航.vcxproj -> D:\E盘\GPS_INS组合导航1.1(serial)\Debug\组合导航.exe
-     1>已完成生成项目“D:\E盘\GPS_INS组合导航1.1(serial)\组合导航\组合导航.vcxproj”(Build 个目标)的操作。
+         组合导航.vcxproj -> D:\GNSS_SINS\GPS_INS组合导航1.1(serial)\Debug\组合导航.exe
+     1>已完成生成项目“D:\GNSS_SINS\GPS_INS组合导航1.1(serial)\组合导航\组合导航.vcxproj”(Rebuild 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.33
+已用时间 00:00:02.93
